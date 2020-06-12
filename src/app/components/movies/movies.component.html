@@ -4,7 +4,7 @@
     <form></form>
     <mat-form-field style="width: 100%;" appearance="outline">
       <mat-label>Search by Movie Title</mat-label>
-      <input [(ngModel)]="searchText" matInput>
+      <input (keyup.enter)="searchMovie()" [(ngModel)]="searchText" matInput>
     </mat-form-field>
 
 
